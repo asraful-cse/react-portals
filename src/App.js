@@ -10,7 +10,7 @@ export default function App() {
         style={{ position: "relative", zIndex: "1" }}
         onClick={() => console.log("clicked")}
       >
-        <button onClick={() => setIsOpen(true)}>Open Modal</button>
+        <button onClick={() => setIsOpen(true)}>Modal Open</button>
 
         <Modal open={isOpen} onClose={() => setIsOpen(false)}>
           Modal tex ------------------
@@ -23,6 +23,7 @@ export default function App() {
           zIndex: 2,
           backgroundColor: "red",
           padding: "10px",
+          marginTop:'30px',
         }}
       >
         Other Content--
